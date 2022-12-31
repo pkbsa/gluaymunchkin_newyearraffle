@@ -10,43 +10,23 @@ body{
 .container{
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2em;
     flex-wrap: wrap;
     z-index: 2;
+    padding: 2em;
+    text-align: center;
 }
-.container h1{
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    font-weight: 800;
+.imgbox{
+    max-width: 60vh;
 }
 .container img{
-    max-height: 80vh;
-    max-width: 100vw;
+    max-width: 100%;
 }
-.container .box{
-    overflow: hidden;
-    max-height: 35em;
-    max-width: 30em;
-    text-align: center;
-}
-.container input{
-    height: 4em;
-    width: 20em;
-    border-radius: 3px;
-    text-align: center;
-}
-.container button{
-    height: 3.8em;
-    width: 8em;
-    border-radius: 3px;
-    margin: 1em;
-    background-color: #CABE50;
-    border : 0px;
-}
-.container button:hover{
-    cursor: pointer;
+.container p{
+    width: 100%;
+    color: rgb(104, 102, 102);
 }
 .container a{
     text-decoration: none;
@@ -59,14 +39,20 @@ nav{
     margin: 2rem;
     position: relative;
     z-index: 2;
-}
-nav .active{
-    color: black;
+    color: rgba(61, 60, 60, 0.905);
 }
 nav a{
     text-decoration: none;
     color: rgb(75, 74, 74);
 }
+nav .active{
+    color: black;
+}
+.Button {
+    display: flex;
+    justify-content: end;
+}
+
 .decoration img{
     float: left;
     position: absolute;
